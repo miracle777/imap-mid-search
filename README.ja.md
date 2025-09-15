@@ -59,6 +59,23 @@ IMAP_CONFIGS = {
 }
 
 ```
+### プロバイダー辞書の外部化（providers.json）
+
+顧客固有の接続先は **コード外** で管理できます。  
+`email_search.py` と同じフォルダに `providers.json` がある場合、内蔵の `IMAP_CONFIGS` を **追加/上書き** します。
+
+**providers.json の例:**
+```json
+{
+  "mycorp": { "server": "mail1234.mycorp.example.com", "port": 993 },
+  "legacy": { "server": "mx.legacy-host.example.jp",   "port": 993 }
+}
+```
+対話メニューでプロバイダー名（例: mycorp）を入力するだけで選択できます。
+もちろん manual を選べば、ホスト名とポートを手入力できます。
+
+providers.json が無い場合でも、内蔵の設定でそのまま動作します。
+
 # セキュリティ
 
 - パスワードは環境変数または対話入力を推奨（シェル履歴に残さない）
