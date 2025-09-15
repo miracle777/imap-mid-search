@@ -51,6 +51,11 @@ If a `providers.json` file exists next to `email_search.py`, its entries will **
   "legacy": { "server": "mx.legacy-host.example.jp",   "port": 993 }
 }
 ```
+In the interactive menu, just type the provider key (e.g., mycorp).
+Or choose manual to input host/port by hand.
+
+If providers.json does not exist, the program still works with the built-in defaults.
+
 
 ## MIT License
 
