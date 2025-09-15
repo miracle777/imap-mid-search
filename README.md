@@ -50,7 +50,7 @@ If a `providers.json` file exists next to `email_search.py`, its entries will **
   "mycorp": { "server": "mail1234.mycorp.example.com", "port": 993 },
   "legacy": { "server": "mx.legacy-host.example.jp",   "port": 993 }
 }
-
+```
 
 ## MIT License
 
