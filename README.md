@@ -35,9 +35,22 @@ No data is sent anywhere except your IMAP server; results are written to local C
 $env:IMAP_HOST="imap.example.com"
 $env:IMAP_USER="info@example.com"
 $env:IMAP_PASS="YOUR_PASSWORD"
-```
 
 python .\imap_mid_search.py --mailboxes * --ids-file .\ids.txt
+```
+### Provider dictionary override (providers.json)
+
+You can keep customer-specific server names **outside the code**.
+
+If a `providers.json` file exists next to `email_search.py`, its entries will **extend/override** the built-in `IMAP_CONFIGS`.
+
+**providers.json example:**
+```json
+{
+  "mycorp": { "server": "mail1234.mycorp.example.com", "port": 993 },
+  "legacy": { "server": "mx.legacy-host.example.jp",   "port": 993 }
+}
+
 
 ## MIT License
 
