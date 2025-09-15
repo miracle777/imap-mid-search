@@ -1,3 +1,6 @@
+[![English](https://img.shields.io/badge/README-English-black)](README.md)
+[![日本語](https://img.shields.io/badge/README-日本語-blue)](README.ja.md)
+
 # 日本語版 README
 
 ## IMAP Message-ID Search (Python, 標準ライブラリのみ)
