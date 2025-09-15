@@ -22,22 +22,6 @@ python3 imap_mid_search.py \
   --ids 20240213212126.4429A161827048B0@gmail.com
 ```
 
-## Security
-
-Prefer environment variables or interactive prompt for passwords (avoid shell history).
-
-This tool selects mailboxes readonly.
-
-No data is sent anywhere except your IMAP server; results are written to local CSV.
-
-## Windows (PowerShell)
-```
-$env:IMAP_HOST="imap.example.com"
-$env:IMAP_USER="info@example.com"
-$env:IMAP_PASS="YOUR_PASSWORD"
-
-python .\imap_mid_search.py --mailboxes * --ids-file .\ids.txt
-```
 ### Provider dictionary override (providers.json)
 
 You can keep customer-specific server names **outside the code**.
@@ -55,6 +39,24 @@ In the interactive menu, just type the provider key (e.g., mycorp).
 Or choose manual to input host/port by hand.
 
 If providers.json does not exist, the program still works with the built-in defaults.
+
+
+## Security
+
+Prefer environment variables or interactive prompt for passwords (avoid shell history).
+
+This tool selects mailboxes readonly.
+
+No data is sent anywhere except your IMAP server; results are written to local CSV.
+
+## Windows (PowerShell)
+```
+$env:IMAP_HOST="imap.example.com"
+$env:IMAP_USER="info@example.com"
+$env:IMAP_PASS="YOUR_PASSWORD"
+
+python .\imap_mid_search.py --mailboxes * --ids-file .\ids.txt
+```
 
 
 ## MIT License
