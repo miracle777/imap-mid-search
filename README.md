@@ -16,6 +16,7 @@ python3 imap_mid_search.py \
   --host imap.example.com --user info@example.com --password 'YOUR_PASSWORD' \
   --mailboxes INBOX Sent Trash \
   --ids 20240213212126.4429A161827048B0@gmail.com
+```
 
 ## Security
 
@@ -26,9 +27,11 @@ This tool selects mailboxes readonly.
 No data is sent anywhere except your IMAP server; results are written to local CSV.
 
 ## Windows (PowerShell)
+```
 $env:IMAP_HOST="imap.example.com"
 $env:IMAP_USER="info@example.com"
 $env:IMAP_PASS="YOUR_PASSWORD"
+```
 
 python .\imap_mid_search.py --mailboxes * --ids-file .\ids.txt
 
