@@ -1,3 +1,6 @@
+[![English](https://img.shields.io/badge/README-English-black)](README.md)
+[![日本語](https://img.shields.io/badge/README-日本語-blue)](README.ja.md)
+
 # IMAP Message-ID Search (Python, stdlib only)
 
 Searches an IMAP mailbox by RFC822 **Message-ID** and exports matches to CSV.  
